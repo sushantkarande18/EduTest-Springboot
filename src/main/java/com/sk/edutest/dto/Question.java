@@ -1,8 +1,12 @@
 package com.sk.edutest.dto;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.util.Map;
 
+@Document(collection = "Question")
 public class Question {
+    String paperId;
     String id;
     String content;
     Map<String, String> options;
@@ -10,6 +14,14 @@ public class Question {
     String explanation;
 
     public Question() {
+    }
+
+    public String getPaperId() {
+        return paperId;
+    }
+
+    public void setPaperId(String paperId) {
+        this.paperId = paperId;
     }
 
     public String getId() {
