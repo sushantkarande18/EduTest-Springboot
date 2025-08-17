@@ -1,16 +1,19 @@
-package com.sk.edutest.dto;
+package com.sk.edutest.document;
+
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Map;
 
-public class Question {
+@Document(collection = "QuestionBank")
+public class QuestionBankData {
     private String paperCategory;
     private String questionId;
-    String content;
-    Map<String, String> options;
-    String answer;
-    String explanation;
+    private String content;
+    private Map<String, String> options;
+    private String answer;
+    private String explanation;
 
-    public Question() {
+    public QuestionBankData() {
     }
 
     public String getPaperCategory() {

@@ -1,13 +1,13 @@
-package com.sk.edutest.dto;
+package com.sk.edutest.document;
 
-import java.util.List;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-public class Paper {
+@Document(collection = "Paper")
+public class PaperData {
     private String paperId;
     private String paperName;
-    private List<Question> questions;
 
-    public Paper() {
+    public PaperData() {
     }
 
     public String getPaperId() {
@@ -26,11 +26,4 @@ public class Paper {
         this.paperName = paperName;
     }
 
-    public List<Question> getQuestions() {
-        return questions;
-    }
-
-    public void setQuestions(List<Question> questions) {
-        this.questions = questions;
-    }
 }

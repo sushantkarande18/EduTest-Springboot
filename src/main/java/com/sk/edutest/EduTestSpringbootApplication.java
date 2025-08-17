@@ -1,4 +1,4 @@
-package com.sk.edutest.app;
+package com.sk.edutest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

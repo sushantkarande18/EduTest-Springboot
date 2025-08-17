@@ -1,4 +1,4 @@
-package com.sk.edutest.app;
+package com.sk.edutest.repos;
 
 import com.sk.edutest.dto.Paper;
 import org.springframework.data.mongodb.repository.MongoRepository;
